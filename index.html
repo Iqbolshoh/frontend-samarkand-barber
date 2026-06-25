@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sartaroshxona - Premium Barbershop</title>
-    <!-- Font Awesome ikonkalar uchun -->
+    <title>Barbershop - Premium Barbershop</title>
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- CSS faylni ulash -->
+    <!-- CSS file -->
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <!-- NAVIGATSIYA -->
+    <!-- NAVIGATION -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="#" class="logo"><i class="fas fa-cut"></i>Barber</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Bosh sahifa</a></li>
-                <li><a href="#about">Haqida</a></li>
-                <li><a href="#services">Xizmatlar</a></li>
-                <li><a href="#team">Jamoa</a></li>
-                <li><a href="#gallery">Galereya</a></li>
-                <li><a href="#contact" class="btn-nav">Bog'lanish</a></li>
-                <!-- Dark mode tugmasi -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+                <!-- Dark mode toggle -->
                 <li>
-                    <button class="theme-toggle" id="themeToggle" title="Tungi rejim">
+                    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
                         <i class="fas fa-moon"></i>
                     </button>
                 </li>
@@ -34,156 +34,159 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION WITH SLIDER -->
     <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1560869713-7d0a29430803?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        </div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Premium Sartaroshxona</h1>
-            <p>Professional soch turmagi va zamonaviy uslublar. O'zingizni maxsus his qiling!</p>
-            <a href="#contact" class="btn-primary">Hoziroq yoziling</a>
+            <h1>Premium Barbershop</h1>
+            <p>Professional haircuts and modern styles. Feel special!</p>
+            <a href="#contact" class="btn-primary">Book Now</a>
+        </div>
+        <!-- Slider dots -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
 
-    <!-- HAQIDA SECTION -->
+    <!-- ABOUT SECTION -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-title">
-                <h2>Biz haqimizda</h2>
-                <p>10 yildan ortiq tajribaga ega sartaroshxona</p>
+                <h2>About Us</h2>
+                <p>Over 10 years of experience in barbering</p>
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Sartaroshxona ichki ko'rinishi">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barbershop interior" id="aboutImage">
                 </div>
                 <div class="about-text">
-                    <h3>Premium Sartaroshxona</h3>
-                    <p>Biz 2010 yildan beri mijozlarimizga yuqori sifatli sartaroshlik xizmatlarini taqdim etib kelmoqdamiz. Zamonaviy uskunalar va professional jamoa bilan sizning qiyofangizni yanada chiroyli qilishga yordam beramiz.</p>
-                    <p>Har bir mijozga individual yondashuv va zamonaviy uslublarni taklif etamiz. Sizning xohishingiz va qulayligingiz biz uchun eng muhim mezon hisoblanadi.</p>
+                    <h3>Premium Barbershop</h3>
+                    <p>We have been providing high-quality barbering services to our clients since 2010. With modern equipment and a professional team, we help you look your best.</p>
+                    <p>We offer individual attention to each client and modern styles. Your wishes and comfort are our top priority.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- XIZMATLAR SECTION -->
+    <!-- SERVICES SECTION -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>Xizmatlarimiz</h2>
-                <p>Siz uchun eng yaxshi xizmatlar</p>
+                <h2>Our Services</h2>
+                <p>The best services for you</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-cut"></i>
-                    <h3>Soch turmagi</h3>
-                    <p>Zamonaviy va klassik soch turmaklari. Professional uslubda bajariladi.</p>
-                    <span class="price">50,000 so'm</span>
+                    <h3>Haircut</h3>
+                    <p>Modern and classic haircuts. Done in a professional style.</p>
+                    <span class="price">50,000 UZS</span>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-beard"></i>
-                    <h3>Soqol qirqish</h3>
-                    <p>An'anaviy va zamonaviy soqol qirqish usullari.</p>
-                    <span class="price">30,000 so'm</span>
+                    <h3>Beard Trim</h3>
+                    <p>Traditional and modern beard trimming techniques.</p>
+                    <span class="price">30,000 UZS</span>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-spa"></i>
-                    <h3>Yuz massaji</h3>
-                    <p>Dam olish va terini yangilash uchun maxsus massaj.</p>
-                    <span class="price">40,000 so'm</span>
+                    <h3>Facial Massage</h3>
+                    <p>Special massage for relaxation and skin rejuvenation.</p>
+                    <span class="price">40,000 UZS</span>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-paint-brush"></i>
-                    <h3>Soch bo'yash</h3>
-                    <p>Professional bo'yoqlar bilan sifatli bo'yash xizmati.</p>
-                    <span class="price">80,000 so'm</span>
+                    <h3>Hair Coloring</h3>
+                    <p>Professional coloring service with quality dyes.</p>
+                    <span class="price">80,000 UZS</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- JAMOA SECTION -->
+    <!-- TEAM SECTION -->
     <section class="team" id="team">
         <div class="container">
             <div class="section-title">
-                <h2>Bizning jamoa</h2>
-                <p>Tajribali professional ustalar</p>
+                <h2>Our Team</h2>
+                <p>Experienced professional barbers</p>
             </div>
             <div class="team-grid">
                 <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Usta 1">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barber 1">
                     <div class="team-info">
                         <h3>Aziz Bekmurodov</h3>
-                        <p>Bosh usta</p>
+                        <p>Master Barber</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Usta 2">
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barber 2">
                     <div class="team-info">
                         <h3>Jasur Karimov</h3>
-                        <p>Katta usta</p>
+                        <p>Senior Barber</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Usta 3">
+                    <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barber 3">
                     <div class="team-info">
                         <h3>Dilshod Rahimov</h3>
-                        <p>Dizayner usta</p>
+                        <p>Style Designer</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GALEREYA SECTION -->
+    <!-- GALLERY SECTION WITH CHANGING IMAGES -->
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-title">
-                <h2>Galereya</h2>
-                <p>Bizning ishlarimizdan namunalar</p>
+                <h2>Gallery</h2>
+                <p>Samples of our work</p>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1560869713-7d0a29430803?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
-                    <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ish 1">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
-                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ish 2">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
-                    <img src="https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ish 3">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images will be loaded by JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- ALOQA SECTION -->
+    <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Biz bilan bog'laning</h2>
-                <p>Hoziroq yoziling yoki savol bering</p>
+                <h2>Contact Us</h2>
+                <p>Book now or ask a question</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Aloqa ma'lumotlari</h3>
+                    <h3>Contact Information</h3>
                     <ul class="contact-details">
-                        <li><i class="fas fa-map-marker-alt"></i> Toshkent shahar, Chilonzor tumani, 15-mavze</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Tashkent city, Chilanzar district, 15-block</li>
                         <li><i class="fas fa-phone"></i> +998 90 123 45 67</li>
                         <li><i class="fas fa-envelope"></i> info@barber.uz</li>
-                        <li><i class="fas fa-clock"></i> Dushanba - Shanba: 09:00 - 20:00</li>
+                        <li><i class="fas fa-clock"></i> Monday - Saturday: 09:00 - 20:00</li>
                     </ul>
                 </div>
                 <div class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Ismingiz" required>
+                        <input type="text" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" id="phone" placeholder="Telefon raqamingiz" required>
+                        <input type="tel" id="phone" placeholder="Your Phone Number" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" placeholder="Xabaringiz" required></textarea>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="button" class="btn-submit" onclick="sendMessage()">Yuborish</button>
+                    <button type="button" class="btn-submit" onclick="sendMessage()">Send</button>
                 </div>
             </div>
         </div>
@@ -197,7 +200,7 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-        <p>&copy; 2026 Premium Sartaroshxona. Barcha huquqlar himoyalangan.</p>
+        <p>&copy; 2026 Premium Barbershop. All rights reserved.</p>
     </footer>
 
     <!-- MODAL -->
@@ -211,7 +214,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- JavaScript faylni ulash -->
+    <!-- JavaScript file -->
     <script src="./assets/script.js"></script>
 </body>
 </html>
